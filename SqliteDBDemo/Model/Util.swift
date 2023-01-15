@@ -17,7 +17,7 @@ class Util{
     func getPath(dbName: String) -> String{
         let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         let fileUrl = documentDirectory.appendingPathComponent(dbName)
-        //print("DB Path :- \(fileUrl.path)")
+        print("DB Path :- \(fileUrl.path)")
         return fileUrl.path
     }
     

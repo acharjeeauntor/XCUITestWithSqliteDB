@@ -29,11 +29,13 @@ class AddStudentViewController: UIViewController {
             let student = StudentModel(id: studentModel!.id, name: txtName.text!, mark: txtMarks.text!)
             let isUpdate = ModelManager.getInstance().updateStudent(student: student)
             print("isUpdate :- \(isUpdate)")
+            navigationController?.popViewController(animated: true)
         }
         else{
             let student = StudentModel(id: "", name: txtName.text!, mark: txtMarks.text!)
             let isSave = ModelManager.getInstance().SaveData(studentModel: student)
             print("isSave :- \(isSave)")
+            navigationController?.popViewController(animated: true)
         }
     }
 
