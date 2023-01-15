@@ -4,9 +4,14 @@
 //
 //  Created by Auntor Acharja on 15/1/23.
 
+
 import Foundation
+import SqliteDBDemo
+
+
 
 class Utils{
+
     
     struct TestData: Decodable {
         var studentInfo: Student
@@ -29,4 +34,17 @@ class Utils{
         let data = try! decoder.decode(TestData.self, from: jsonData)
         return data
     }
+    
+
+    //getAllstudents()
+    
+    
+
+    
+    
+    
+    
+    
+    
 }
+
