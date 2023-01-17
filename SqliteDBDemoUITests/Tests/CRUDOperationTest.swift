@@ -16,28 +16,22 @@ class CRUDOperationTest:BaseTest{
     let studentListScreen = StudentListScreen()
     let addStudentScreen = AddStudentScreen()
     let utils = Utils()
-//    var randomName:String = ""
-//    var randomMarks:String = ""
-//
-//    var testData = utils.getTestData().studentInfo
-//    var randomName = String(testData.name+String.random(length: 5))
-//    var randomMarks = String(testData.mark+Int.randomInt(min: 2, max: 6))
-//
-//
+ 
+    lazy var testData = utils.getTestData().studentInfo
+    lazy var randomName = String(testData.name+String.random(length: 5))
+    lazy var randomMarks = String(testData.mark+Int.randomInt(min: 2, max: 6))
+
+    
+    
     
     func test1_AddStudentInfo(){
-        // Test Data
-        let testData = utils.getTestData().studentInfo
-        randomName = String(testData.name+String.random(length: 5))
-        randomMarks = String(testData.mark+Int.randomInt(min: 2, max: 6))
-        
         // Steps
         studentListScreen.tapOnAddIcon()
         addStudentScreen.insertAndSaveInfo(name:randomName, mark: randomMarks)
       
         // UI - Assertions
-        XCTAssertTrue(studentListScreen.getNameElement(name: randomName).exists)
-        XCTAssertTrue(studentListScreen.getMarksElement(marks: randomMarks).exists)
+        XCTAssertTrue(studentListScreen.getNameElement(name: randomName).exists,"Student Name is not Exist in Student list")
+        XCTAssertTrue(studentListScreen.getMarksElement(marks: randomMarks).exists,"Student Marks is not Exist in Student list")
         
         // DB - Assertions
         let actualName = studentListScreen.getNameElement(name: randomName).label

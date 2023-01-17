@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		2A296381297450F200E3FAAD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A296380297450F200E3FAAD /* Utils.swift */; };
 		2A3E359229744A6100CEBC46 /* CommonSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E359129744A6100CEBC46 /* CommonSwift.swift */; };
-		2AAA05542973EEF500F23850 /* StudentListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAA05532973EEF500F23850 /* StudentListScreen.swift */; };
+		2AA621902976FD0700CEBF95 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A350524D1C7A900468D71 /* ModelManager.swift */; };
+		2AA621922976FDDC00CEBF95 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A350524D1C7A900468D71 /* ModelManager.swift */; };
+		2AA6219C297703AA00CEBF95 /* StudentListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAA05532973EEF500F23850 /* StudentListScreen.swift */; };
+		2AA6219E297705DE00CEBF95 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A296380297450F200E3FAAD /* Utils.swift */; };
 		2AAA05562973EF0C00F23850 /* AddStundentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAA05552973EF0C00F23850 /* AddStundentScreen.swift */; };
 		2AAA05582973EF4D00F23850 /* CRUDOperationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAA05572973EF4D00F23850 /* CRUDOperationTest.swift */; };
 		2AAA055C2973EFD200F23850 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAA055B2973EFD200F23850 /* BaseTest.swift */; };
 		2C4A350224D1C33B00468D71 /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A350124D1C33B00468D71 /* StudentCell.swift */; };
 		2C4A350424D1C44600468D71 /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A350324D1C44600468D71 /* AddStudentViewController.swift */; };
-		2C4A350624D1C7A900468D71 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A350524D1C7A900468D71 /* ModelManager.swift */; };
 		2C4A350824D1C7E400468D71 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A350724D1C7E400468D71 /* StudentModel.swift */; };
 		2C4A350A24D1C7FA00468D71 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A350924D1C7FA00468D71 /* Util.swift */; };
 		2C4A351924D1C85E00468D71 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A350E24D1C85D00468D71 /* FMResultSet.m */; };
@@ -33,19 +35,40 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2AAA05492973EE4D00F23850 /* PBXContainerItemProxy */ = {
+		2AA621962977008700CEBF95 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2C711C8A24D07BB90011A31A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2C711C9124D07BB90011A31A;
 			remoteInfo = SqliteDBDemo;
 		};
+		2AA62198297700D700CEBF95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C711C8A24D07BB90011A31A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AAA05422973EE4D00F23850;
+			remoteInfo = SqliteDBDemoUITests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A1953702975C1A1003D3847 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2A296380297450F200E3FAAD /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		2A3E359129744A6100CEBC46 /* CommonSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSwift.swift; sourceTree = "<group>"; };
-		2AAA05432973EE4D00F23850 /* SqliteDBDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqliteDBDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A70CB892977068100F451C8 /* SqliteDBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqliteDBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A70CB8A2977068100F451C8 /* SqliteDBDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqliteDBDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AAA05532973EEF500F23850 /* StudentListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListScreen.swift; sourceTree = "<group>"; };
 		2AAA05552973EF0C00F23850 /* AddStundentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStundentScreen.swift; sourceTree = "<group>"; };
 		2AAA05572973EF4D00F23850 /* CRUDOperationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDOperationTest.swift; sourceTree = "<group>"; };
@@ -68,7 +91,6 @@
 		2C4A351624D1C85E00468D71 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		2C4A351724D1C85E00468D71 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		2C4A351824D1C85E00468D71 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		2C711C9224D07BB90011A31A /* SqliteDBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqliteDBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C711C9524D07BB90011A31A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C711C9724D07BB90011A31A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2C711C9924D07BB90011A31A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -249,17 +271,9 @@
 			children = (
 				2C711C9424D07BB90011A31A /* SqliteDBDemo */,
 				2AAA05442973EE4D00F23850 /* SqliteDBDemoUITests */,
-				2C711C9324D07BB90011A31A /* Products */,
+				2A70CB892977068100F451C8 /* SqliteDBDemo.app */,
+				2A70CB8A2977068100F451C8 /* SqliteDBDemoUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		2C711C9324D07BB90011A31A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2C711C9224D07BB90011A31A /* SqliteDBDemo.app */,
-				2AAA05432973EE4D00F23850 /* SqliteDBDemoUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		2C711C9424D07BB90011A31A /* SqliteDBDemo */ = {
@@ -282,17 +296,17 @@
 			buildConfigurationList = 2AAA054B2973EE4D00F23850 /* Build configuration list for PBXNativeTarget "SqliteDBDemoUITests" */;
 			buildPhases = (
 				2AAA053F2973EE4D00F23850 /* Sources */,
-				2AAA05402973EE4D00F23850 /* Frameworks */,
 				2AAA05412973EE4D00F23850 /* Resources */,
+				2AAA05402973EE4D00F23850 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2AAA054A2973EE4D00F23850 /* PBXTargetDependency */,
+				2AA621972977008700CEBF95 /* PBXTargetDependency */,
 			);
 			name = SqliteDBDemoUITests;
 			productName = SqliteDBDemoUITests;
-			productReference = 2AAA05432973EE4D00F23850 /* SqliteDBDemoUITests.xctest */;
+			productReference = 2A70CB8A2977068100F451C8 /* SqliteDBDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		2C711C9124D07BB90011A31A /* SqliteDBDemo */ = {
@@ -302,14 +316,16 @@
 				2C711C8E24D07BB90011A31A /* Sources */,
 				2C711C8F24D07BB90011A31A /* Frameworks */,
 				2C711C9024D07BB90011A31A /* Resources */,
+				2A1953702975C1A1003D3847 /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2AA62199297700D700CEBF95 /* PBXTargetDependency */,
 			);
 			name = SqliteDBDemo;
 			productName = SqliteDBDemo;
-			productReference = 2C711C9224D07BB90011A31A /* SqliteDBDemo.app */;
+			productReference = 2A70CB892977068100F451C8 /* SqliteDBDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -342,7 +358,7 @@
 				Base,
 			);
 			mainGroup = 2C711C8924D07BB90011A31A;
-			productRefGroup = 2C711C9324D07BB90011A31A /* Products */;
+			productRefGroup = 2C711C8924D07BB90011A31A;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -381,9 +397,10 @@
 				2AAA055C2973EFD200F23850 /* BaseTest.swift in Sources */,
 				2A3E359229744A6100CEBC46 /* CommonSwift.swift in Sources */,
 				2AAA05562973EF0C00F23850 /* AddStundentScreen.swift in Sources */,
-				2AAA05542973EEF500F23850 /* StudentListScreen.swift in Sources */,
+				2AA621902976FD0700CEBF95 /* ModelManager.swift in Sources */,
 				2AAA05582973EF4D00F23850 /* CRUDOperationTest.swift in Sources */,
 				2A296381297450F200E3FAAD /* Utils.swift in Sources */,
+				2AA6219C297703AA00CEBF95 /* StudentListScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,15 +411,16 @@
 				2C4A350824D1C7E400468D71 /* StudentModel.swift in Sources */,
 				2C711C9A24D07BB90011A31A /* ViewController.swift in Sources */,
 				2C4A351D24D1C85E00468D71 /* FMDatabasePool.m in Sources */,
+				2AA6219E297705DE00CEBF95 /* Utils.swift in Sources */,
 				2C4A350424D1C44600468D71 /* AddStudentViewController.swift in Sources */,
 				2C4A351C24D1C85E00468D71 /* FMDatabase.m in Sources */,
 				2C4A350A24D1C7FA00468D71 /* Util.swift in Sources */,
 				2C711C9624D07BB90011A31A /* AppDelegate.swift in Sources */,
 				2C711C9824D07BB90011A31A /* SceneDelegate.swift in Sources */,
+				2AA621922976FDDC00CEBF95 /* ModelManager.swift in Sources */,
 				2C4A351924D1C85E00468D71 /* FMResultSet.m in Sources */,
 				2C4A350224D1C33B00468D71 /* StudentCell.swift in Sources */,
 				2C4A351B24D1C85E00468D71 /* FMDatabaseQueue.m in Sources */,
-				2C4A350624D1C7A900468D71 /* ModelManager.swift in Sources */,
 				2C4A351A24D1C85E00468D71 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,10 +428,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2AAA054A2973EE4D00F23850 /* PBXTargetDependency */ = {
+		2AA621972977008700CEBF95 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2C711C9124D07BB90011A31A /* SqliteDBDemo */;
-			targetProxy = 2AAA05492973EE4D00F23850 /* PBXContainerItemProxy */;
+			targetProxy = 2AA621962977008700CEBF95 /* PBXContainerItemProxy */;
+		};
+		2AA62199297700D700CEBF95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AAA05422973EE4D00F23850 /* SqliteDBDemoUITests */;
+			targetProxy = 2AA62198297700D700CEBF95 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -612,6 +635,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39W7296UCM;
 				INFOPLIST_FILE = "SqliteDBDemo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -633,6 +657,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39W7296UCM;
 				INFOPLIST_FILE = "SqliteDBDemo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -6,13 +6,12 @@
 
 
 import Foundation
-import SqliteDBDemo
+//import
 
 
 
 class Utils{
-
-    
+    var x = ModelManager()
     struct TestData: Decodable {
         var studentInfo: Student
     }
@@ -28,16 +27,15 @@ class Utils{
         
         // Read the JSON data from the file
         let jsonData = try! Data(contentsOf: fileURL)
+        var y  = x.getAllstudents()
+        print("Model: \(y)")
         
         // Use JSONDecoder to convert the JSON data to your struct
         let decoder = JSONDecoder()
         let data = try! decoder.decode(TestData.self, from: jsonData)
         return data
     }
-    
-
-    //getAllstudents()
-    
+        
     
 
     
