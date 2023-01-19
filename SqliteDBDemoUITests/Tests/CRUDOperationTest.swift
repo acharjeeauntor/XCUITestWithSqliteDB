@@ -34,10 +34,10 @@ class CRUDOperationTest:BaseTest{
         XCTAssertTrue(studentListScreen.getMarksElement(marks: randomMarks).exists,"Student Marks is not Exist in Student list")
         
         // DB - Assertions
-        let actualName = studentListScreen.getNameElement(name: randomName).label
-        let actualMarks = studentListScreen.getMarksElement(marks: randomMarks).label
-        
-        
+//        let actualName = studentListScreen.getNameElement(name: randomName).label
+//        let actualMarks = studentListScreen.getMarksElement(marks: randomMarks).label
+//
+//
                         
     }
    

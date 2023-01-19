@@ -14,10 +14,12 @@ class Util{
     static let share = Util()
     
     //MARK:- Getting path of our Database
-    func getPath(dbName: String) -> String{
+    public func getPath(dbName: String) -> String{
+        print("Auntor Call")
         let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         let fileUrl = documentDirectory.appendingPathComponent(dbName)
         print("DB Path :- \(fileUrl.path)")
+      
         return fileUrl.path
     }
     
